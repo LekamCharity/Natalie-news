@@ -12,3 +12,4 @@ def index():
     sport_news = get_sources('sports')
     
     return render_template('index.html',general = daily_news,business=business_news,sports=sport_news)
+
