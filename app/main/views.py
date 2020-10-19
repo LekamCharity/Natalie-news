@@ -5,7 +5,7 @@ from app import main
 @main.route('/')
 def index():
     '''
-    Views thats renders news sources to the home page
+    Views thats renders news sources to the home page and its data
     '''
     daily_news = get_sources('general')
     business_news = get_sources('business')
