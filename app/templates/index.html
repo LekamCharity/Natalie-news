@@ -1,6 +1,6 @@
- 
+ {% extends 'base.html' %}
+ {% import 'macros.html' as macros %}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-<body>
   <div class="main">
     <div class="container-fluid">
       <div class="row">
@@ -18,16 +18,14 @@
                 {% endfor %}
               </ul>
             </div>
-
           </div>
         </div>
-
+    <!-- <section II> -->
         <div class="col-9">
           <h1 text-align="center"> News Updates </h3>
           <div class="container">
             <div class="card-columns">
               {% for headlines in headlines %}
-
               <div class="card">
                 <img class="card" src="{{headlines.image}}" alt="Card image cap" size="100px180">
                 <div class="card-body">
@@ -48,4 +46,3 @@
       </div>
     </div>
   </div>
-</body>
