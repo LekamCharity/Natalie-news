@@ -25,7 +25,7 @@ This is an application whereby it contains current issues i.e news to help those
 * cd Natalie-News
 
 * To test the application
- ```python3.8 manager.py test```
+ ```python3.8 manage.py test```
 
 * To run the application, in your terminal:
 
