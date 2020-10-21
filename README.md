@@ -10,7 +10,7 @@ This is an application whereby it contains current issues i.e news to help those
 
 ## Live Demo
 
-
+``` https://natalie-news.herokuapp.com/```
 
 ## User Story
 
