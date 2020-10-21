@@ -24,11 +24,6 @@ This is an application whereby it contains current issues i.e news to help those
 
 * cd Natalie-News
 
-* To install requirements:
-```pip install requirements.txt```
-
-* export NEWS_API_KEY = '<Enter your API key>'
-
 * To test the application
  ```python3.8 manager.py test```
 
