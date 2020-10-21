@@ -9,3 +9,7 @@ main {
   overflow-y: auto;
   height: 90vh; /* NEW */
 }
+
+h3{
+  font-size: 50px;
+}
