@@ -2,7 +2,7 @@
 <br>
 <br>
 <body>
-  <h1 text-align="center" class="text-capitalize"> {{id}} </h3>
+  <h1 style="text-align:center" class="text-capitalize"> {{id}} </h3>
   <div class="container">
     <div class="card-columns">
       {% for article in articles %}
@@ -12,7 +12,7 @@
           <h5 class="card-title">{{article.author}}</h5>
           <p class="card-text">{{article.description}}</p>
           <a href="{{article.url}}">
-            <p class="card-text">Click here for more details!</p>
+            <p class="card-text badge badge-success">Read More..</p>
           </a>
         </div>
         <div class="card-footer">

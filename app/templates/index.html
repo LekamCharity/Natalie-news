@@ -4,58 +4,26 @@
 <br>
 <br>
 <br>
-<body>
+<br>
+<div class="container-fluid">
+  <div class="card card-cascade wider">
+    <h1 style="text-align:center"> NEWS UPDATES. </h1>
+    {% for headlines in headlines %}
+    <div class="view view-cascade overlay">
+      <img src="{{headlines.image}}" alt="image" class="img-thumbnail" width="100%" height="300">
+    </div>
 
-  <div class="main">
-    <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-3">
-          <div class="card-column">
-            <div class="card-header">
-              <h4>Search For News Updates</h4>
-            </div>
-            <div class="list-group list-group-flush scrolly">
-              <ul>
-                {% for source in sources %}
-                <a href="/article/{{source.id}}">
-                  <p class="text-capitalize text-muted">{{source.id}}</p>
-                </a>
-                {% endfor %}
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-9">
-          <h1 text-align="center"> News Updates </h3>
-          <div class="container">
-            <div class="card-columns">
-              {% for headlines in headlines %}
-
-              <div class="card">
-                <img class="card" src="{{headlines.image}}" alt="Card image cap" size="100px180">
-                <div class="card-body">
-                  <h5 class="card-title">{{headlines.author}}</h5>
-                  <p class="card-text">{{headlines.description}}</p>
-                  <a href="{{headlines.url}}">
-                    <p class="card-text">Click here for more details!</p>
-                  </a>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Publish date:{{headlines.time}}</small>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-
+    <div class="card-body card-body-cascade text-center pb-0">
+      <h4 class="card-title"><strong>{{headlines.author}}</strong></h4>
+      <p class="card-text">{{headlines.description}}</p>
+      <a href="{{headlines.url}}">
+        <p class="card-text badge badge-success">Read more...</p>
+      </a>
+      <div class="card-footer text-muted text-center mt-4">
+        <small class="text-muted">Publish date:{{headlines.time}}</small>
       </div>
+      {% endfor %}
     </div>
   </div>
-
-</body>
-
-{% endblock %}
+</div>
+{% endblock %} -->
